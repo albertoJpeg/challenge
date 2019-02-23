@@ -22,12 +22,13 @@ describe "app" do
     end
   end
 
-  # describe "GET '/random_breed'" do
-  #   it "returns a random dog of a specific breed" do
-  #     let breed = "yorkshire"
-  #      get "/random_breed"
-  #       expect(last_response).to be_ok
+   describe "GET '/random_breed'" do
+     it "returns a random dog of a specific breed" do
+       breed = "labrador"
+       get "/random_breed?breed="+breed
+       puts last_response.body.inspect
+       expect(last_response).to be_ok
 
-  #   end
-  # end
+     end
+   end
 end
