@@ -9,9 +9,11 @@ gem "json_spec"
 group :development do
   gem "pry"
   gem "shotgun"
+  gem "rake"
 end
 
 group :test do
   gem "rspec"
   gem "rack-test"
+  gem "rake"
 end
